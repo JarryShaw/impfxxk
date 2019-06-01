@@ -1,6 +1,6 @@
-================================
+======================================
 impfxxk -- Import for Humans 💅🏻
-================================
+======================================
 
 This is to be a project on modifying ``sys.metapath`` and
 making Python ``import`` statement as smooth as possible.
@@ -11,10 +11,7 @@ Inspiration
 This idea was originally inspired from the |bro|_ language,
 where it uses ``@load`` statement what ``import`` doses in
 Python, except that the ``@load`` statement takes a
-relative path as its specifier. For example::
-
-.. |bro| replace:: Bro/Zeek
-.. _bro: www.zeek.org
+relative path as its specifier. For example:
 
 .. code:: bro
 
@@ -22,7 +19,7 @@ relative path as its specifier. For example::
     @load ../sample_parent.bro
     @load ../sample/child.bro
 
-with the project structure as following::
+with the project structure as following:
 
 .. code:: text
 
@@ -45,7 +42,7 @@ works just like ``@load``. This is the back story of the
 Expectation
 ===========
 
-When your project is as such::
+When your project is as such:
 
 .. code:: text
 
@@ -57,7 +54,7 @@ When your project is as such::
     |       |-- child.py
     |-- sample_parent.py
 
-Normally, you will want to do::
+Normally, you will want to do:
 
 .. code:: python
 
@@ -73,6 +70,9 @@ However, with ``impfxxk``, you can simply add a statement
 (it's not decided yet) before your original ``import``
 statements, just like |future| does; and your code will
 work just as you wish.
+
+.. |bro| replace:: Bro/Zeek
+.. _bro: www.zeek.org
 
 .. |future| replace:: ``__future__``
 .. _future: https://docs.python.org/3/library/__future__.html
