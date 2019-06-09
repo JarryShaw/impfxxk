@@ -1,8 +1,12 @@
 {
     "cSpell.words": [
         "Fxxk",
+        "PYTHONCASEOK",
         "gaocegege",
+        "getcwd",
         "impfxxk",
+        "rpartition",
+        "smsl",
         "zeek"
     ],
     "python.linting.enabled": true,
