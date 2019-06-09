@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import importlib.abc
+import importlib.machinery
 import importlib.util
 import sys
 
