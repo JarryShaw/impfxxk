@@ -2,7 +2,7 @@
 impfxxk -- Import for Humans 💅🏻
 ======================================
 
-This is to be a project on modifying ``sys.metapath`` and
+This is to be a project on modifying ``sys.meta_path`` and
 making Python ``import`` statement as smooth as possible.
 
 Inspiration

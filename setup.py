@@ -25,7 +25,7 @@ setup(
     author_email='jarryshaw@icloud.com',
     url='https://github.com/JarryShaw/impfxxk',
     license='MIT License',
-    keywords='import metapath',
+    keywords='import meta_path',
     description='Import for Humans 💅🏻',
     long_description=long_desc,
     long_description_content_type='text/x-rst; charset=UTF-8',

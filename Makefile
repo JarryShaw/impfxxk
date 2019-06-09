@@ -1,3 +1,4 @@
+clean: pypi-clean
 pipenv: pipenv-update
 pypi: pypi-dist pypi-upload
 maintainer: update-maintainer
@@ -37,6 +38,11 @@ pypi-clean:
 
 pypi-dist: pypi-clean
 	pipenv run python setup.py sdist bdist_wheel
+
+pypi-register: pypi-dist
+	twine check dist/* || true
+	twine register dist/*.whl -r pypi --skip-existing
+	twine register dist/*.whl -r pypitest --skip-existing
 
 pypi-upload:
 	twine check dist/* || true
