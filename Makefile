@@ -30,9 +30,9 @@ update-maintainer:
 
 pypi-clean:
 	mkdir -p sdist eggs wheels
-	find dist -iname '*.egg' -exec mv {} eggs \;
-	find dist -iname '*.whl' -exec mv {} wheels \;
-	find dist -iname '*.tar.gz' -exec mv {} sdist \;
+	[ -d dist ] && find dist -iname '*.egg' -exec mv {} eggs \; || true
+	[ -d dist ] && find dist -iname '*.whl' -exec mv {} wheels \; || true
+	[ -d dist ] && find dist -iname '*.tar.gz' -exec mv {} sdist \; || true
 	rm -rf build dist *.egg-info
 
 pypi-dist: pypi-clean
