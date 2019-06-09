@@ -72,7 +72,7 @@ statements, just like |future| does; and your code will
 work just as you wish.
 
 .. |bro| replace:: Bro/Zeek
-.. _bro: www.zeek.org
+.. _bro: https://www.zeek.org
 
 .. |future| replace:: ``__future__``
 .. _future: https://docs.python.org/3/library/__future__.html
